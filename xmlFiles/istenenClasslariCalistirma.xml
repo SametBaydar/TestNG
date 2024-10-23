@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke Test Suite">
+    <test name="Smoke Test">
+        <classes>
+            <class name="Tests.FacebookTesti"></class>
+            <class name="Tests.YeniKullaniciOlusturma"></class>
+            <class name="Tests.PageClassKullanimi"></class>
+        </classes>
+
+    </test>
+    <test name="istenen methods calistirma">
+        <classes>
+            <class name="Tests.Priority_Test">
+                <methods>
+                    <include name="testotomasyonuTesti"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="group smoke test">
+        <groups>
+            <run>
+                <include name="Smoke"></include>
+            </run>
+        </groups>
+        <packages>
+            <package name="Tests.*"></package>
+        </packages>
+    </test>
+</suite>

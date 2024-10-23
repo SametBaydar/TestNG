@@ -17,7 +17,7 @@ public class PageClassKullanimi {
      ve page Class'ları obje oluşturularak kullanılır.
     */
 
-    @Test
+    @Test(groups = {"Smoke"})
     public void aramaTest(){
         // testotomasyonu sayfasına gidin
         Driver.getDriver().get("https://testotomasyonu.com");
